@@ -35,8 +35,6 @@
 <p><strong>示例：</strong></p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//变量的定义</span></span><br><span class="line">	<span class="comment">//语法：数据类型  变量名 = 初始值</span></span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
 <blockquote>
 <p>注意：C++在创建变量时，必须给变量一个初始值，否则会报错</p>
 </blockquote>
@@ -56,15 +54,6 @@
 </ol>
 <p><strong>示例：</strong></p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//1、宏常量</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> day 7</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;一周里总共有 &quot;</span> &lt;&lt; day &lt;&lt; <span class="string">&quot; 天&quot;</span> &lt;&lt; endl;</span><br><span class="line">	<span class="comment">//day = 8;  //报错，宏常量不可以修改</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//2、const修饰变量</span></span><br><span class="line">	<span class="type">const</span> <span class="type">int</span> month = <span class="number">12</span>;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;一年里总共有 &quot;</span> &lt;&lt; month &lt;&lt; <span class="string">&quot; 个月份&quot;</span> &lt;&lt; endl;</span><br><span class="line">	<span class="comment">//month = 24; //报错，常量是不可以修改的</span></span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
 
 <h3 id="1-5-关键字"><a href="#1-5-关键字" class="headerlink" title="1.5 关键字"></a>1.5 关键字</h3><p><strong>作用：</strong>关键字是C++中预先保留的单词（标识符）</p>
 <ul>
@@ -214,10 +203,6 @@
 <p><strong>示例：</strong></p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;short 类型所占内存空间为： &quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">short</span>) &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;int 类型所占内存空间为： &quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">int</span>) &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;long 类型所占内存空间为： &quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">long</span>) &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;long long 类型所占内存空间为： &quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">long</span> <span class="type">long</span>) &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-
-
 <blockquote>
 <p><strong>整型结论</strong>：&#x3D;&#x3D;short &lt; int &lt;&#x3D; long &lt;&#x3D; long long&#x3D;&#x3D;</p>
 </blockquote>
@@ -249,16 +234,6 @@
 </tbody></table>
 <p><strong>示例：</strong></p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="type">float</span> f1 = <span class="number">3.14f</span>;</span><br><span class="line">	<span class="type">double</span> d1 = <span class="number">3.14</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; f1 &lt;&lt; endl;</span><br><span class="line">	cout &lt;&lt; d1&lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;float  sizeof = &quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(f1) &lt;&lt; endl;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;double sizeof = &quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(d1) &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//科学计数法</span></span><br><span class="line">	<span class="type">float</span> f2 = <span class="number">3e2</span>; <span class="comment">// 3 * 10 ^ 2 </span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;f2 = &quot;</span> &lt;&lt; f2 &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="type">float</span> f3 = <span class="number">3e-2</span>;  <span class="comment">// 3 * 0.1 ^ 2</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;f3 = &quot;</span> &lt;&lt; f3 &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
 
 <h3 id="2-4-字符型"><a href="#2-4-字符型" class="headerlink" title="2.4 字符型"></a>2.4 字符型</h3><p><strong>作用：</strong>字符型变量用于显示单个字符</p>
 <p><strong>语法：</strong><code>char ch = &#39;a&#39;;</code></p>
@@ -699,18 +674,6 @@
 <p>示例：</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;\\&quot;</span> &lt;&lt; endl;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;\tHello&quot;</span> &lt;&lt; endl;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;\n&quot;</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-
-
-
-
-
 <h3 id="2-6-字符串型"><a href="#2-6-字符串型" class="headerlink" title="2.6 字符串型"></a>2.6 字符串型</h3><p><strong>作用</strong>：用于表示一串字符</p>
 <p><strong>两种风格</strong></p>
 <ol>
@@ -724,11 +687,9 @@
 <ol>
 <li><p><strong>C++风格字符串</strong>：  <code>string  变量名 = &quot;字符串值&quot;</code></p>
 <p>示例：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	string str = <span class="string">&quot;hello world&quot;</span>;</span><br><span class="line">	cout &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​</p>
-</li>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	string str = <span class="string">&quot;hello world&quot;</span>;</span><br><span class="line">	cout &lt;&lt; str &lt;&lt; endl;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
+<p>​</p>
 <blockquote>
 <p>注意：C++风格字符串，需要加入头文件&#x3D;&#x3D;#include&lt;string&gt;&#x3D;&#x3D;</p>
 </blockquote>
@@ -742,37 +703,11 @@
 <p>示例：</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="type">bool</span> flag = <span class="literal">true</span>;</span><br><span class="line">	cout &lt;&lt; flag &lt;&lt; endl; <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line">	flag = <span class="literal">false</span>;</span><br><span class="line">	cout &lt;&lt; flag &lt;&lt; endl; <span class="comment">// 0</span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;size of bool = &quot;</span> &lt;&lt; <span class="built_in">sizeof</span>(<span class="type">bool</span>) &lt;&lt; endl; <span class="comment">//1</span></span><br><span class="line">	</span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <h3 id="2-8-数据的输入"><a href="#2-8-数据的输入" class="headerlink" title="2.8 数据的输入"></a>2.8 数据的输入</h3><p><strong>作用：用于从键盘获取数据</strong></p>
 <p><strong>关键字：</strong>cin</p>
 <p><strong>语法：</strong> <code>cin &gt;&gt; 变量 </code></p>
 <p>示例：</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//整型输入</span></span><br><span class="line">	<span class="type">int</span> a = <span class="number">0</span>;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;请输入整型变量：&quot;</span> &lt;&lt; endl;</span><br><span class="line">	cin &gt;&gt; a;</span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//浮点型输入</span></span><br><span class="line">	<span class="type">double</span> d = <span class="number">0</span>;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;请输入浮点型变量：&quot;</span> &lt;&lt; endl;</span><br><span class="line">	cin &gt;&gt; d;</span><br><span class="line">	cout &lt;&lt; d &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//字符型输入</span></span><br><span class="line">	<span class="type">char</span> ch = <span class="number">0</span>;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;请输入字符型变量：&quot;</span> &lt;&lt; endl;</span><br><span class="line">	cin &gt;&gt; ch;</span><br><span class="line">	cout &lt;&lt; ch &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//字符串型输入</span></span><br><span class="line">	string str;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;请输入字符串型变量：&quot;</span> &lt;&lt; endl;</span><br><span class="line">	cin &gt;&gt; str;</span><br><span class="line">	cout &lt;&lt; str &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//布尔类型输入</span></span><br><span class="line">	<span class="type">bool</span> flag = <span class="literal">true</span>;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;请输入布尔型变量：&quot;</span> &lt;&lt; endl;</span><br><span class="line">	cin &gt;&gt; flag;</span><br><span class="line">	cout &lt;&lt; flag &lt;&lt; endl;</span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> EXIT_SUCCESS;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-
 
 <h2 id="3-运算符"><a href="#3-运算符" class="headerlink" title="3 运算符"></a>3 运算符</h2><p><strong>作用：</strong>用于执行代码的运算</p>
 <p>本章我们主要讲解以下几类运算符：</p>
@@ -893,8 +828,6 @@
 <p><strong>示例3：</strong></p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//递增</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//后置递增</span></span><br><span class="line">	<span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">	a++; <span class="comment">//等价于a = a + 1</span></span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl; <span class="comment">// 11</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//前置递增</span></span><br><span class="line">	<span class="type">int</span> b = <span class="number">10</span>;</span><br><span class="line">	++b;</span><br><span class="line">	cout &lt;&lt; b &lt;&lt; endl; <span class="comment">// 11</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//区别</span></span><br><span class="line">	<span class="comment">//前置递增先对变量进行++，再计算表达式</span></span><br><span class="line">	<span class="type">int</span> a2 = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b2 = ++a2 * <span class="number">10</span>;</span><br><span class="line">	cout &lt;&lt; b2 &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//后置递增先计算表达式，后对变量进行++</span></span><br><span class="line">	<span class="type">int</span> a3 = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b3 = a3++ * <span class="number">10</span>;</span><br><span class="line">	cout &lt;&lt; b3 &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-
-
 <blockquote>
 <p>总结：前置递增先对变量进行++，再计算表达式，后置递增相反</p>
 </blockquote>
@@ -949,14 +882,6 @@
 <p><strong>示例：</strong></p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//赋值运算符</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">// =</span></span><br><span class="line">	<span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">	a = <span class="number">100</span>;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// +=</span></span><br><span class="line">	a = <span class="number">10</span>;</span><br><span class="line">	a += <span class="number">2</span>; <span class="comment">// a = a + 2;</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// -=</span></span><br><span class="line">	a = <span class="number">10</span>;</span><br><span class="line">	a -= <span class="number">2</span>; <span class="comment">// a = a - 2</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// *=</span></span><br><span class="line">	a = <span class="number">10</span>;</span><br><span class="line">	a *= <span class="number">2</span>; <span class="comment">// a = a * 2</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// /=</span></span><br><span class="line">	a = <span class="number">10</span>;</span><br><span class="line">	a /= <span class="number">2</span>;  <span class="comment">// a = a / 2;</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// %=</span></span><br><span class="line">	a = <span class="number">10</span>;</span><br><span class="line">	a %= <span class="number">2</span>;  <span class="comment">// a = a % 2;</span></span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-
 <h3 id="3-3-比较运算符"><a href="#3-3-比较运算符" class="headerlink" title="3.3 比较运算符"></a>3.3 比较运算符</h3><p><strong>作用：</strong>用于表达式的比较，并返回一个真值或假值</p>
 <p>比较运算符有以下符号：</p>
 <table>
@@ -1007,8 +932,6 @@
 </tbody></table>
 <p>示例：</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">	<span class="type">int</span> b = <span class="number">20</span>;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a == b) &lt;&lt; endl; <span class="comment">// 0 </span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a != b) &lt;&lt; endl; <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a &gt; b) &lt;&lt; endl; <span class="comment">// 0</span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a &lt; b) &lt;&lt; endl; <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a &gt;= b) &lt;&lt; endl; <span class="comment">// 0</span></span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; (a &lt;= b) &lt;&lt; endl; <span class="comment">// 1</span></span><br><span class="line">	</span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
 
 <blockquote>
 <p>注意：C和C++ 语言的比较运算中， &#x3D;&#x3D;“真”用数字“1”来表示， “假”用数字“0”来表示。&#x3D;&#x3D; </p>
